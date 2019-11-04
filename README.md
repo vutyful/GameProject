@@ -14,4 +14,3 @@ story       스토리와 관련된 파일이 저장된 폴더입니다.
 - [한승탁](https://github.com/vutyful) : 게임 개요 및 기획, 프로그램 개발 총괄
 - [한이슬](https://github.com/LSHgy) : 게임 스토리 기획
 - [김수진](https://github.com/SJ0826) : 메인화면 디자인
--최용순 : 게임 레벨링
