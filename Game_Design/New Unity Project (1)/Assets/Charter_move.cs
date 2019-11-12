@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Charter_move : MonoBehaviour
 {
+    private Animator anime;
+
     public float speed = 10.0f;
     float jumpPower = 7.0f;
     Rigidbody rigdbody;
@@ -11,7 +13,7 @@ public class Charter_move : MonoBehaviour
     bool isJumping;
     int hp = 6;
     GameObject player;
-    float h;
+    private float h;
 
     void Update()
     {
@@ -28,7 +30,8 @@ public class Charter_move : MonoBehaviour
         }
     }
 
-    void Awake()
+
+void Awake()
     {
         player = GameObject.Find("Toon Chicken");
         rigdbody = GetComponent<Rigidbody> ();
@@ -36,6 +39,8 @@ public class Charter_move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anime = GetComponent<Animator>();
+        rigdbody = GetComponent<Rigidbody>();
     }
     void FixedUpdate()
     {
